@@ -1,0 +1,30 @@
+:root {
+    --board-bg-color: rgba(170, 125, 82, 0.933);
+}
+
+/* html,
+body {
+    height: 100%;
+    width: 100%;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    padding: 40px;
+    background: var(--board-bg-color);
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+}
+
+.cell {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
