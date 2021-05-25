@@ -56,7 +56,3 @@ function showGreeting(message) {
 
 
 connect();
-
-fetch('http://t4coach42.p.ssafy.io:8080/test/2', { method: 'POST' })
-    .then(res => res.json())
-    .then(res => console.log(res));
