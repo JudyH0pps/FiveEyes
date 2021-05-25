@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>O-mok</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <div id="app">
-            <canvas id="board" height="640" width="640">
-                이 페이지는 크롬 브라우저에 최적화되어 있습니다.
-            </canvas>
-        </div>
-        <script src="main.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O-mok</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <canvas id="board" height="640" width="640">
+            이 페이지는 크롬 브라우저에 최적화되어 있습니다.
+        </canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="src/stomp.min.js"></script>
+    <script src="sock.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
